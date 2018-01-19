@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+
+  HeaderData = {};
+  public viewTitle = 'Angular Application';
+
+  constructor() {
+    this.HeaderData = {
+      ApplicationTitle: this.viewTitle
+    };
+  }
 }
